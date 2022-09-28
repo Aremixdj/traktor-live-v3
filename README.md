@@ -2,8 +2,7 @@
 
 [![GitHub release](https://img.shields.io/github/v/tag/dotherightthing/traktor-live-v3)](https://github.com/dotherightthing/traktor-live-v3/releases) [![GitHub issues](https://img.shields.io/github/issues/dotherightthing/traktor-live-v3.svg)](https://github.com/dotherightthing/traktor-live-v3/issues)
 
-Traktor Pro mix template using multiple MIDI controllers. This is a 'fork' of <https://github.com/dotherightthing/traktor-live-v2/> and changes the supported MIDI controllers.
-
+Traktor Pro mix template using multiple MIDI controllers. This is a 'fork' of <https://github.com/dotherightthing/traktor-live-v2/> and changes the supported MIDI controllers, and removes ClyphX Pro (see <https://github.com/dotherightthing/traktor-live-v2/issues/11>).
 Includes Ableton Live starter file.
 
 I've documented this for my own benefit, but please help yourself to any part you find useful.
