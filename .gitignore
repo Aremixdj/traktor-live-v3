@@ -1,0 +1,13 @@
+manuals
+.vscode
+ableton-live/traktor-live-v3 Project/Ableton Project Info/Project8_1.cfg
+ableton-live/traktor-live-v3 Project/Icon?
+ableton-live/traktor-live-v3 Project/Backup
+ableton-live/traktor-live-v3 Project/Samples
+ableton-live/traktor-live-v3 Project/*.als
+!ableton-live/traktor-live-v3 Project/traktor-live-v3.als
+!*.code-workspace
+ableton-live/traktor-live-v3 Project/Recordings from Audio Hijack
+ableton-live/traktor-live-v3 Project/Samples
+clyphx-pro/ClyphX_Pro/XTB
+clyphx-pro/ClyphX_Pro/XTC

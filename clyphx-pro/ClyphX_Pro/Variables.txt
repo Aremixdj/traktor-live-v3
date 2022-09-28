@@ -1,0 +1,102 @@
+#********************************** [SETTINGS NOTES] **********************************
+
+# Please DO NOT change any of the spacing in this file.
+
+# Please DO NOT change the name of this file or its file extension.  When done making
+# your changes to the settings below, just save the file.
+
+# After saving this file, you will need to load a new Live Set/reload the
+# current Live Set for your changes to take effect.
+
+
+
+# --------------------------------------------------------------------------------------
+
+[VARIABLES]
+
+# Below, you can specify a list of Variables to use in Action Lists.
+
+# The entry format is %VARIABLE_NAME% = VALUE
+
+# --------------------------------------------------------------------------------------
+# | ENTRY         |  DESCRIPTION
+# --------------------------------------------------------------------------------------
+# | VARIABLE_NAME |  A unique one-word name for the Variable enclosed in percent signs.
+# --------------------------------------------------------------------------------------
+# | VALUE         |  The value or expression to assign to the Variable. The value can
+# |               |  contain any value or valid Python expression, but cannot contain
+# |               |  semicolons.
+# --------------------------------------------------------------------------------------
+
+# See the Variables section of the manual for more info on Variables.
+
+# --------------------------------------------------------------------------------------
+
+# Below is an example list that has been commented out (the # at the beginning of
+# a line makes the line a comment). Your list should be formatted in the same way
+# except without the # at the beginning of each line.
+
+# Store a simple value
+# %EX_VAR_1% = 10
+
+# Store the result of an expression
+# %EX_VAR_2% = (%EX_VAR_2% + 1)
+
+# Store the result of an expression containing a predicate
+# %EX_VAR_3% = (1 if %EX_VAR_2% % 2 == 0 else 0)
+
+# Store an action (this basically creates an alias for the action)
+# %EX_VAR_4% = IN "Computer Keyboard"
+
+# --------------------------------------------------------------------------------------
+
+# Shared Variables
+# These are automatically exposed to user_actions
+# These can also be updated by user_actions, see https://forum.nativekontrol.com/post/27823/thread
+
+# Controller XT Scripts
+
+%MIDI_TRAKTOR% = 'MIDI'
+%MIDI_MFT_A% = 'MIDIA'
+%MIDI_MFT_B% = 'MIDIB'
+%MIDI_MFT_C% = 'MIDIC'
+%MIDI_Z1% = 'MIDID'
+%MIDI_PUSH2% = 'MIDIE'
+
+# MIDI controls
+# See also G-Controls (which don't support variables)
+
+# Traktor Kontrol Z1
+
+%MIDI_CC_Z1_ON_L% = CC 1 5
+%MIDI_CC_Z1_ON_R% = CC 2 5
+
+# Traktor Virtual Input
+# See Clyphx Pro M4L (Max for Live) device on Master track, accessed via User Mode (Shift + Session)
+
+%MIDI_CC_TRAKTOR_SYNC% = CC 16 1
+%MIDI_CC_TRAKTOR_SELECT_DECK_A% = CC 16 2
+%MIDI_CC_TRAKTOR_SELECT_DECK_B% = CC 16 3
+
+# Midi Fighter Twister
+# See also Encoder Bindings (which don't support variables)
+
+%MIDI_CC_MFT_BANK_1_ROW_1_ENCODER_1% = CC 1 0
+%MIDI_CC_MFT_BANK_1_ROW_1_ENCODER_2% = CC 1 1
+%MIDI_CC_MFT_BANK_1_ROW_1_ENCODER_3% = CC 1 2
+%MIDI_CC_MFT_BANK_1_ROW_1_ENCODER_4% = CC 1 3
+
+%MIDI_CC_MFT_BANK_1_ROW_1_RGB_1% = CC 2 0
+%MIDI_CC_MFT_BANK_1_ROW_1_RGB_2% = CC 2 1
+%MIDI_CC_MFT_BANK_1_ROW_1_RGB_3% = CC 2 2
+%MIDI_CC_MFT_BANK_1_ROW_1_RGB_4% = CC 2 3
+
+%MIDI_CC_MFT_BANK_2_ROW_1_ENCODER_1% = CC 1 16
+%MIDI_CC_MFT_BANK_2_ROW_1_ENCODER_2% = CC 1 17
+%MIDI_CC_MFT_BANK_2_ROW_1_ENCODER_3% = CC 1 18
+%MIDI_CC_MFT_BANK_2_ROW_1_ENCODER_4% = CC 1 19
+
+%MIDI_CC_MFT_BANK_2_ROW_1_RGB_1% = CC 2 16
+%MIDI_CC_MFT_BANK_2_ROW_1_RGB_2% = CC 2 17
+%MIDI_CC_MFT_BANK_2_ROW_1_RGB_3% = CC 2 18
+%MIDI_CC_MFT_BANK_2_ROW_1_RGB_4% = CC 2 19
