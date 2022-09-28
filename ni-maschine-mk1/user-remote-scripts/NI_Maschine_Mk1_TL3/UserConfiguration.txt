@@ -176,10 +176,10 @@ LockButton: 85
 # features of 8 Tracks at a time.
 
 # VolumeSlider1-VolumeSlider8 control Track volume.
-VolumeSlider1: 18
-VolumeSlider2: 19
-VolumeSlider3: 20
-VolumeSlider4: 21
+VolumeSlider1: -1
+VolumeSlider2: -1
+VolumeSlider3: -1
+VolumeSlider4: -1
 VolumeSlider5: -1
 VolumeSlider6: -1
 VolumeSlider7: -1

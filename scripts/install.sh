@@ -19,15 +19,9 @@ set -e
 # install project files
 cd $INIT_CWD \
 && echo "Installing configuration files" \
-&& cp 'ni-controller-editor/Ableton_Resampler.ncm' ~/Documents/Native\ Instruments/Controller\ Editor/ \
-&& cp 'ni-maschine-mk1/user-remote-scripts/UserConfiguration.txt' ~/Library/Preferences/Ableton/Live\ $1/User\ Remote\ Scripts/Maschine\ Mk1\ User\ Remote\ Script/ \
-&& rm -rf clyphx-pro/ClyphX_Pro/XTB \
-&& cp -R clyphx-pro/ClyphX_Pro/XTA clyphx-pro/ClyphX_Pro/XTB \
-&& rm -rf clyphx-pro/ClyphX_Pro/XTC \
-&& cp -R clyphx-pro/ClyphX_Pro/XTA clyphx-pro/ClyphX_Pro/XTC \
-&& rm -rf ~/NativeKONTROL/ClyphX_Pro \
-&& rm -rf '/Applications/Ableton Live 10 Standard.app/Contents/App-Resources/MIDI Remote Scripts/ClyphX_Pro/clyphx_pro/user_actions' \
-&& cp -R 'clyphx-pro/ClyphX_Pro' ~/NativeKONTROL \
-&& cp -R 'clyphx-pro/user_actions' /Applications/Ableton\ Live\ 10\ Standard.app/Contents/App-Resources/MIDI\ Remote\ Scripts/ClyphX_Pro/clyphx_pro \
+&& cp 'ni-kontrol-z1/ni-controller-editor/NI_Kontrol_Z1_TL3.nckz1' ~/Documents/Native\ Instruments/Controller\ Editor/ \
+&& cp 'ni-maschine-mk1/ni-controller-editor/NI_Maschine_Mk1_TL3.ncm' ~/Documents/Native\ Instruments/Controller\ Editor/ \
+&& cp -R 'ni-kontrol-z1/user-remote-scripts/NI_Kontrol_Z1_TL3' ~/Library/Preferences/Ableton/Live\ $1/User\ Remote\ Scripts/ \
+&& cp -R 'ni-maschine-mk1/user-remote-scripts/NI_Maschine_Mk1_TL3' ~/Library/Preferences/Ableton/Live\ $1/User\ Remote\ Scripts/ \
 && cp 'loopback/Devices.plist' ~/Library/Application\ Support/Loopback \
 && echo "Installation complete"

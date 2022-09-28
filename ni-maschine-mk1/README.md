@@ -7,6 +7,7 @@ I'm also aiming to replace the functionality of the recently purchased MIDI Figh
 ## M4L Devices
 
 * <https://github.com/dotherightthing/m4l-helpers>
+* Note that in M4L Devices, device encoders 1-8, 9-13 etc are exposed by and set in the `live.banks` object.
 
 ## Access MIDI mode
 
@@ -24,8 +25,11 @@ I'm also aiming to replace the functionality of the recently purchased MIDI Figh
 
 **Files:**
 
-* Ableton 11 template available from <https://support.native-instruments.com/hc/en-us/articles/4413367278097-How-to-Install-MASCHINE-Templates-for-Ableton-Live> - but this won't open in the Controller Editor for Maschine Mk1. There is an update available for the software but I'm afraid that this might negatively impact support for Maschine Mk1, so I haven't installed it yet
-* Custom template - `ni-maschine-mk1/ni-controller-editor/Ableton_Resampler.ncm`
+The following file is installed to the correct location by `npm run install`:
+
+* `ni-controller-editor/NI_Maschine_Mk1_TL3.ncm`
+
+Note: An Ableton Live 11 template is available from <https://support.native-instruments.com/hc/en-us/articles/4413367278097-How-to-Install-MASCHINE-Templates-for-Ableton-Live> - but this won't open in the Controller Editor for Maschine Mk1. There is an update available for the software but I'm afraid that this might negatively impact support for Maschine Mk1, so I haven't installed it yet
 
 **Installation:**
 
@@ -33,26 +37,48 @@ I'm also aiming to replace the functionality of the recently purchased MIDI Figh
 2. Install Controller Editor
 3. File > Open Template
 
-## User Remote Scripts
+## User Remote Script (Automapping)
 
 **Description:**
 
-* Similar to MIDI Remote Scripts but less powerful as the only options are what's exposed in the text config file
-* Works in conjunction with Controller Editor to split mappings across hardware navigable 'pages'
+* Similar to MIDI Remote Scripts but less powerful as the only options are what's exposed in the text config file (though these work well and provide LED feedback)
+* Works in conjunction with Controller Editor to assign CCs and split mappings across hardware navigable 'pages'
+* Assigned channel 1 in Controller Editor to prevent controller clashes (if that's a thing with User Remote Scripts)
 
 **Files:**
 
-* `ni-maschine-mk1/user-remote-scripts/UserConfiguration.txt` (copied to the correct location by `npm run install`)
+The following file is installed to the correct location by `npm run install`:
 
-Note that in M4L Devices, device encoders 1-8, 9-13 etc are controlled in the `live.banks` object.
+* `user-remote-scripts/UserConfiguration.txt`
 
-**Additional MIDI mapping:**
+**Mappings:**
 
-The following mappings are done directly in the Live template, but could be replaced by e.g. ClyphX Pro:
+See Controller Editor.
 
-* 4 track XFade assign (button): `CC 50-53 / Channel 1`
-* 4 track VU: Envelope L (encoder): `CC 14-17 / Channel 1`
-* 4 track Pan (encoder): `CC 22-25 / Channel 1`
+## Manual MIDI mapping
+
+The following mappings are done directly in the Live template.
+
+Note: [...] denotes a label in the Controller Editor template.
+
+```txt
+* [Pan 1] = Track 1/"SAMPLE 1" - Macro - Balance (rack macro used to share setting with Push2)
+* [Pan 2] = Track 2/"SAMPLE 2" - Macro - Balance (rack macro used to share setting with Push2)
+* [Pan 3] = Track 3/"SAMPLE 3" - Macro - Balance (rack macro used to share setting with Push2)
+* [Pan 4] = Track 4/"SAMPLE 4" - Macro - Balance (rack macro used to share setting with Push2)
+* [Vol 1] = Track 1/"SAMPLE 1" - Macro - Vol Rcvr (rack macro used to share setting with Push2)
+* [Vol 2] = Track 2/"SAMPLE 2" - Macro - Vol Rcvr (rack macro used to share setting with Push2)
+* [Vol 3] = Track 3/"SAMPLE 3" - Macro - Vol Rcvr (rack macro used to share setting with Push2)
+* [Vol 4] = Track 4/"SAMPLE 4" - Macro - Vol Rcvr (rack macro used to share setting with Push2)
+* [VU 1]  = Track "Meter 1"    - Device - midiAudioToCC - EnvelopeL
+* [VU 2]  = Track "Meter 2"    - Device - midiAudioToCC - EnvelopeL
+* [VU 3]  = Track "Meter 3"    - Device - midiAudioToCC - EnvelopeL
+* [VU 4]  = Track "Meter 4"    - Device - midiAudioToCC - EnvelopeL
+* [XF 1]  = Track 1/"SAMPLE 1" - Xfade assign (A/B)
+* [XF 2]  = Track 2/"SAMPLE 2" - Xfade assign (A/B)
+* [XF 3]  = Track 3/"SAMPLE 3" - Xfade assign (A/B)
+* [XF 4]  = Track 4/"SAMPLE 4" - Xfade assign (A/B)
+```
 
 ## MIDI Remote Scripts (TODO)
 

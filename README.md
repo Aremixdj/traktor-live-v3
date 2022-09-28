@@ -40,7 +40,6 @@ The Loop Recorder is problematic because it records loops slightly too long. Sam
     * [Ableton Live](#ableton-live)
     * [Plugins](#plugins)
 5. **[Controller Mapping](#5-controller-mapping):**
-    * [nativeKONTROL ClyphX Pro](#nativekontrol-clyphx-pro)
     * [Native Instruments Traktor Pro Controller Manager](#native-instruments-traktor-pro-controller-manager)
     * [KORG nanoKEY Studio](#korg-nanokey-studio)
     * [Native Instruments Traktor Kontrol X1](#native-instruments-traktor-kontrol-x1)
@@ -134,49 +133,24 @@ Contains a 2 channel mixer and an 8 channel sampler (Deck A x3 + Deck B x3 + Res
 1. Click `Ext` so that it lights up - Ableton Live will now follow the Sync source (Traktor Pro Virtual Output)
 2. Global launch quantisation: `1 Bar`
 
+#### Plugins
+
+##### VU Meters
+
+These use the *midiAudioToCC* VST, which is part of the *PIZ MIDI plugins* package by [Paul Cecchetti](https://www.paulcecchettimusic.com).
+
+In order to display a VU Meter for a visual control:
+
+1. Create an Audio track which takes input from one of the sampler tracks
+2. Put an instance of *midiAudioToCC* on this Audio track.
+3. MIDI map the controller's encoder to the Envelope L control
+4. Toggle on Monitor for this track
+5. Mute this track
+6. The signal level will display on the control when the track is not muted
+
 ---
 
 ### 5. Controller Mapping
-
-#### nativeKONTROL ClyphX Pro
-
-* ClyphX Pro and Macrobat
-  * Product: <https://isotonikstudios.com/product/clyphx-pro/>
-  * Version: 1.2.0
-* ClyphX Pro Ableton Live Hotfix:
-  * Product: <https://forum.nativekontrol.com/post/21021>
-* ClyphX Pro Bindings
-  * Product: <https://isotonikstudios.com/product/clyphx-pro-bindings/>
-* ClyphX Pro G-Controls
-  * Product: <https://forum.nativekontrol.com/thread/3906/beta-controls-accessory-clyphx-pro>
-* ClyphX Pro Shift Action
-  * Product: <https://forum.nativekontrol.com/thread/3562/adding-shift-functionality-controls-oscs>
-
-##### ClyphX Pro terminology
-
-* **Button Binding** (Controller) - Defined in `Button Bindings.txt`, binds a MIDI control to a Live parameter (without specifying an Action List); supports LED feedback (which an X-Control doesn't)
-* **Encoder Binding** (Controller) - Defined in `Encoder Bindings.txt`, binds a continuous MIDI control to a continuous Live parameter (without specifying an Action List)
-* **G-Control** (Controller) - Defined in `G-Controls.txt`, similar to an X-Control, but supports additional gestures; doesn't support Variables
-* **Macro** (Global) - Defined in `Macros.txt`, shorthand for a list of actions; supports Variables
-* **Startup Actions** (Global) - X-Trigger defined in `Preferences.txt`, triggers actions when Live opens
-* **User Actions** (Global) - Custom Python scripts which allow for conditional creation and triggering of Actions / Action Lists based on the state of the LOM (Live Object Model); supports Variables
-* **Variable** (Global) - Defined in `Variables.txt`, shorthand for a string value
-* **X-Clip** (Global) - X-Trigger in the form of a Live clip, triggers actions when launched
-* **X-Cue** (Global?) - X-Trigger in the form of a Live locator, triggers actions when passed
-* **X-Scene** (Global?) - X-Trigger in the form of a Live scene, triggers actions when launched
-* **X-Control** (Controller) - X-Trigger defined in `X-Controls.txt`, targetting a MIDI control which triggers an actions when used
-* **X-OSC** (Controller?) - X-Trigger defined in `X-OSC.txt`, targetting an OSC address which triggers when receiving a value
-* **X-Trigger** - Event that triggers scripted Action Lists. These can include MIDI commands which affect Live (and Traktor, via the MIDI Channel set up to output to the *Traktor Pro Virtual Input*)
-* **XT Script** - Adds support for an additional MIDI controller, defined in a sub folder containing ClyphX Pro scripts for that controller
-* **Macrobat** - Adds special modes to racks/macros
-
-Note: A button / MIDI message can be used for EITHER X-Controls OR Button Bindings OR G-Controls.
-
-##### nativeKONTROL ClyphX Pro configuration files: Global
-
-1. `clyphx-pro/ClyphX_Pro/Macros.txt`
-1. `clyphx-pro/ClyphX_Pro/Preferences.txt`
-1. `clyphx-pro/ClyphX_Pro/Variables.txt`
 
 ##### Ableton Live MIDI setup (Traktor)
 
@@ -280,35 +254,6 @@ N/A
 
 ---
 
-#### Native Instruments Traktor Kontrol Z1
-
-* Product: <https://www.native-instruments.com/en/products/traktor/dj-controllers/traktor-kontrol-z1/>
-* Version: 1
-
-##### Ableton Live MIDI setup
-
-* Control Surface: `ClyphX Pro XTD`
-* Input: `Traktor Kontrol Z1 Input`
-  * Track: `On`
-  * Sync: `Off`
-  * Remote: `On`
-* Output: `Traktor Kontrol Z1 Output`
-  * Track: `On`
-  * Sync: `Off`
-  * Remote: `On`
-
-###### Features
-
-* L/R HI/MID/LOW control DECK A/B Device 1 EQ
-* L/R FILTER control DECK A/B Device 1 Pan (Macrobat)
-* L/R VOLUME control DECK A/B Device 1 Vol (Macrobat)
-* L FILTER ON copies DECK A to DECK B
-* R FILTER ON copies DECK B to DECK A
-* CUE MIX controls Cue Volume
-* XFADER controls XFADER
-
----
-
 #### Ableton Push2
 
 * Product: <https://www.ableton.com/en/push/>
@@ -325,10 +270,6 @@ N/A
   * Track: `On`
   * Sync: `Off`
   * Remote: `On`
-
-##### nativeKONTROL ClyphX Pro configuration
-
-See Clyphx Pro M4L (Max for Live) device on Master track, accessed via User Mode (Shift + Session)
 
 ---
 
@@ -364,19 +305,6 @@ When configured to send out MIDI messages, each MFT uses the following;
 * Channel 2 = button / RGB indicator
 * Channel 4 = system: side buttons incl bank switching
 * Channel 5 = 'Shift Encoder Hold' / encoder press and turn (note: Factory Reset required - see <https://forum.djtechtools.com/showthread.php?t=95122> and <https://forum.djtechtools.com/showthread.php?t=96642>)
-
-###### VU Meters
-
-These use the *midiAudioToCC* VST, which is part of the *PIZ MIDI plugins* package by [Paul Cecchetti](https://www.paulcecchettimusic.com).
-
-In order to display a VU Meter on a Midi Fighter encoder:
-
-1. Create an Audio track which takes input from one of the sampler tracks
-2. Put an instance of *midiAudioToCC* on this Audio track.
-3. MIDI map the Midi Fighter encoder to the Envelope L control (or use ClyphX Pro's Encoder Bindings to do so)
-4. Toggle on Monitor for this track
-5. Mute this track
-6. The signal level will display when the sampler track is not muted
 
 Default settings are applied on `$RESET$`. Live's *Save as Default Configuration* function does not appear to work properly with this device.
 

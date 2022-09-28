@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<ni-controller-midi-map version="1">
+  <midi-map type="TraktorKontrolZ1" name="NI_Kontrol_Z1_TL3" port="internal">
+    <wrapmode>0</wrapmode>
+    <controls />
+    <pages>
+      <current_index>0</current_index>
+      <page name="Deck A/B">
+        <button version="1" id="ButtonCue1">
+          <name>CUE A</name>
+          <controller>17</controller>
+          <channel>1</channel>
+          <off>0</off>
+          <on>127</on>
+          <behavior>gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="ButtonCue2">
+          <name>CUE B</name>
+          <controller>27</controller>
+          <channel>1</channel>
+          <off>0</off>
+          <on>127</on>
+          <behavior>gate</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="ButtonFx1">
+          <disabled />
+          <controller>15</controller>
+          <channel>0</channel>
+          <off>0</off>
+          <on>127</on>
+          <behavior onIfDown="on">toggle</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <button version="1" id="ButtonFx2">
+          <disabled />
+          <controller>25</controller>
+          <channel>1</channel>
+          <off>0</off>
+          <on>127</on>
+          <behavior onIfDown="on">toggle</behavior>
+          <reaction>ondown</reaction>
+        </button>
+        <knob version="1" id="LedchainLevelmeter1">
+          <controller>18</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+          <min>0</min>
+          <max>127</max>
+          <ledPattern>0</ledPattern>
+          <behavior>none</behavior>
+        </knob>
+        <knob version="1" id="LedchainLevelmeter2">
+          <controller>28</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+          <min>0</min>
+          <max>127</max>
+          <ledPattern>0</ledPattern>
+          <behavior>none</behavior>
+        </knob>
+        <knob version="1" id="PotiCueMix">
+          <disabled />
+          <controller>0</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiFader1">
+          <name>VOL 5</name>
+          <controller>16</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiFader2">
+          <name>VOL 6</name>
+          <controller>26</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiFilter1">
+          <name>PAN A</name>
+          <controller>14</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiFilter2">
+          <name>PAN B</name>
+          <controller>24</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiGain1">
+          <name>GAIN A</name>
+          <controller>10</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiGain2">
+          <name>GAIN B</name>
+          <controller>20</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiHi1">
+          <name>EQ HI A</name>
+          <controller>11</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiHi2">
+          <name>EQ HI B</name>
+          <controller>21</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiLow1">
+          <name>EQ LOW A</name>
+          <controller>13</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiLow2">
+          <name>EQ LOW B</name>
+          <controller>23</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiMid1">
+          <name>EQ MID A</name>
+          <controller>12</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiMid2">
+          <name>EQ MID B</name>
+          <controller>22</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+        <knob version="1" id="PotiXfader">
+          <name>XFADER</name>
+          <controller>2</controller>
+          <channel>1</channel>
+          <min>0</min>
+          <max>127</max>
+          <default>0</default>
+          <range>360</range>
+          <steps>20</steps>
+          <bipolar>off</bipolar>
+        </knob>
+      </page>
+    </pages>
+  </midi-map>
+</ni-controller-midi-map>
