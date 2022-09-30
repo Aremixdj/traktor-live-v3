@@ -19,9 +19,9 @@ set -e
 # install project files
 cd $INIT_CWD \
 && echo "Installing configuration files" \
-&& cp 'ni-kontrol-z1/ni-controller-editor/NI_Kontrol_Z1_TL3.nckz1' ~/Documents/Native\ Instruments/Controller\ Editor/ \
-&& cp 'ni-maschine-mk1/ni-controller-editor/NI_Maschine_Mk1_TL3.ncm' ~/Documents/Native\ Instruments/Controller\ Editor/ \
-&& cp -R 'ni-kontrol-z1/user-remote-scripts/NI_Kontrol_Z1_TL3' ~/Library/Preferences/Ableton/Live\ $1/User\ Remote\ Scripts/ \
-&& cp -R 'ni-maschine-mk1/user-remote-scripts/NI_Maschine_Mk1_TL3' ~/Library/Preferences/Ableton/Live\ $1/User\ Remote\ Scripts/ \
+&& cp 'ni-kontrol-z1/ni-controller-editor/Kontrol_Z1_TL3.nckz1' ~/Documents/Native\ Instruments/Controller\ Editor/ \
+&& cp 'ni-maschine-mk1/ni-controller-editor/Maschine_Mk1_TL3.ncm' ~/Documents/Native\ Instruments/Controller\ Editor/ \
+&& cp -R 'ni-kontrol-z1/user-remote-scripts/Kontrol_Z1_TL3' ~/Library/Preferences/Ableton/Live\ $1/User\ Remote\ Scripts/ \
+&& cp -R 'ni-maschine-mk1/user-remote-scripts/Maschine_Mk1_TL3' ~/Library/Preferences/Ableton/Live\ $1/User\ Remote\ Scripts/ \
 && cp 'loopback/Devices.plist' ~/Library/Application\ Support/Loopback \
 && echo "Installation complete"

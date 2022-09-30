@@ -36,11 +36,11 @@ The following mappings are done directly in the Live template:
 ## Ableton Live MIDI setup
 
 * Control Surface: `NI Kontrol Z1 TL3`
-* Input: `NI_Kontrol_Z1_TL3 Input`
+* Input: `Kontrol_Z1_TL3 Input`
   * Track: `On`
   * Sync: `Off`
   * Remote: `On`
-* Output: `NI_Kontrol_Z1_TL3 Output`
+* Output: `Kontrol_Z1_TL3 Output`
   * Track: `Off`
   * Sync: `Off`
   * Remote: `On`

@@ -27,7 +27,7 @@ I'm also aiming to replace the functionality of the recently purchased MIDI Figh
 
 The following file is installed to the correct location by `npm run install`:
 
-* `ni-controller-editor/NI_Maschine_Mk1_TL3.ncm`
+* `ni-controller-editor/Maschine_Mk1_TL3.ncm`
 
 Note: An Ableton Live 11 template is available from <https://support.native-instruments.com/hc/en-us/articles/4413367278097-How-to-Install-MASCHINE-Templates-for-Ableton-Live> - but this won't open in the Controller Editor for Maschine Mk1. There is an update available for the software but I'm afraid that this might negatively impact support for Maschine Mk1, so I haven't installed it yet
 
