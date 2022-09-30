@@ -3,6 +3,26 @@
 * Product: <https://www.native-instruments.com/en/products/traktor/dj-controllers/traktor-kontrol-z1/>
 * Version: 1
 
+## Access MIDI mode
+
+* `SHIFT + A + B`
+
+Note that toggling this on and off doesn't seem to affect operation, in Ableton Live at least.
+
+## Controller Editor template
+
+**Description:**
+
+* Provides one page of MIDI controls
+* LEDs can also be assigned a control (to receive VU meter signal)
+* Unneeded controls can be visually disabled
+
+**Files:**
+
+The following file is installed to the correct location by `npm run install`:
+
+* `ni-controller-editor/Kontrol_Z1_TL3.nckz1`
+
 ## User Remote Script (Automapping)
 
 > Technically speaking, User Remote Scripts are MIDI Remote Scripts that are configured via plain text files as opposed to being purely configured in Python [src](https://forum.ableton.com/viewtopic.php?t=204880)
@@ -34,6 +54,8 @@ The following mappings are done directly in the Live template:
 * Left/Right Fader   = Track 5/6/"DECK A/B" - Macro - Vol Rcvr (rack macro used to share setting with Push2)
 * Left/Right LEDs    = Track "Meter 5/6"    - Device - midiAudioToCC - EnvelopeL
 ```
+
+## Ableton Live Preferences
 
 ### MIDI
 
