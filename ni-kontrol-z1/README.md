@@ -33,14 +33,19 @@ The following mappings are done directly in the Live template:
 * Left/Right LEDs    = Track "Meter 5/6"    - Device - midiAudioToCC - EnvelopeL
 ```
 
-## Ableton Live MIDI setup
+### MIDI
 
-* Control Surface: `NI Kontrol Z1 TL3`
-* Input: `Kontrol_Z1_TL3 Input`
+* Control Surface: `Kontrol Z1 TL3`
+* Input: `Kontrol Z1 Input`
+* Input: `Kontrol Z1 Output`
+
+### MIDI Ports
+
+* In: `Kontrol_Z1_TL3 Input`
   * Track: `On`
   * Sync: `Off`
   * Remote: `On`
-* Output: `Kontrol_Z1_TL3 Output`
+* Out: `Kontrol_Z1_TL3 Output`
   * Track: `Off`
   * Sync: `Off`
-  * Remote: `On`
+  * Remote: `On` (required to send MIDI from VU Meter plugin to LEDs)

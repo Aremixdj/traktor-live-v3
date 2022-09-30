@@ -102,15 +102,21 @@ Note: [...] denotes a label in the Controller Editor template.
 2. change to target directory
 3. `find . -name '*.pyc' -exec bash -c 'uncompyle6 $1 > $1.py' _ {}\;`
 
-## Ableton Live preferences
+## Ableton Live MIDI setup
 
 ### MIDI
 
-* Control Surface: `Name_of_User_or_MIDI_Remote_Script`
-* Input: Maschine Controller Virtual Input
-* Output: Maschine Controller Virtual Output
+* Control Surface: `Maschine Mk1 TL3`
+* Input: `Maschine Controller Virtual Input` (doesn't work with `Maschine Controller (MIDI input port 0)`)
+* Input: `Maschine Controller Virtual Output` (doesn't work with `Maschine Controller (MIDI output port 0)`)
 
 ### MIDI Ports
 
-* In: `Name_of_User_or_MIDI_Remote_Script Input`, Track: On, Remote: On
-* Out: `Name_of_User_or_MIDI_Remote_Script Output`, Remote: On
+* In: `Maschine_Mk1_TL3 Input`
+  * Track: `On`
+  * Sync: `Off`
+  * Remote: `On`
+* Out: `Maschine_Mk1_TL3 Output`
+  * Track: `Off`
+  * Sync: `Off`
+  * Remote: `On` (required to send MIDI from VU Meter plugin to `VU N` encoders on LCD)
