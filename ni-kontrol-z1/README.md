@@ -5,6 +5,8 @@
 
 ## User Remote Script (Automapping)
 
+> Technically speaking, User Remote Scripts are MIDI Remote Scripts that are configured via plain text files as opposed to being purely configured in Python [src](https://forum.ableton.com/viewtopic.php?t=204880)
+
 **Description:**
 
 * Similar to MIDI Remote Scripts but less powerful as the only options are what's exposed in the text config file (though these work well and provide LED feedback)
