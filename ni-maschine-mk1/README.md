@@ -104,7 +104,7 @@ Note: [...] denotes a label in the Controller Editor template.
 2. change to target directory
 3. `find . -name '*.pyc' -exec bash -c 'uncompyle6 $1 > $1.py' _ {}\;`
 
-## Ableton Live MIDI setup
+## Ableton Live Preferences
 
 ### MIDI
 
