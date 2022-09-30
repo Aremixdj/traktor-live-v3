@@ -317,7 +317,7 @@
       </knob>
     </controls>
     <pages>
-      <current_index>1</current_index>
+      <current_index>2</current_index>
       <page name="Cue/VU, XF/Volume">
         <button version="1" id="Button1">
           <name>CUE 1</name>
