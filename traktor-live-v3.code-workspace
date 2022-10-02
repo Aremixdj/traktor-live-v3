@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../Music/Ableton/User Library/Presets/MIDI Effects/Max MIDI Effect"
 		}
 	],
 	"settings": {

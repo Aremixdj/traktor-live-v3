@@ -23,5 +23,6 @@ cd $INIT_CWD \
 && cp 'ni-maschine-mk1/ni-controller-editor/Maschine_Mk1_TL3.ncm' ~/Documents/Native\ Instruments/Controller\ Editor/ \
 && cp -R 'ni-kontrol-z1/user-remote-scripts/Kontrol_Z1_TL3' ~/Library/Preferences/Ableton/Live\ $1/User\ Remote\ Scripts/ \
 && cp -R 'ni-maschine-mk1/user-remote-scripts/Maschine_Mk1_TL3' ~/Library/Preferences/Ableton/Live\ $1/User\ Remote\ Scripts/ \
+&& cp -R 'traktor-pro/max4live/Traktor\ Pro\ 3\ Control.amxd' ~/Music/Ableton/User\ Library/Presets/MIDI\ Effects/Max\ MIDI\ Effect/ \ 
 && cp 'loopback/Devices.plist' ~/Library/Application\ Support/Loopback \
 && echo "Installation complete"
