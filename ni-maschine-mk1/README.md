@@ -6,8 +6,10 @@ I'm also aiming to replace the functionality of the recently purchased MIDI Figh
 
 ## M4L Devices
 
-* <https://github.com/dotherightthing/m4l-helpers>
-* Note that in M4L Devices, device encoders 1-8, 9-13 etc are exposed by and set in the `live.banks` object.
+*Note that M4L Devices expose automappings of encoders 1-8, 9-13 etc via the `live.banks` object.*
+
+* <https://github.com/dotherightthing/m4l-helpers> (TBC)
+* <https://github.com/dotherightthing/m4l-traktor-deck-control>
 
 ## Access MIDI mode
 
